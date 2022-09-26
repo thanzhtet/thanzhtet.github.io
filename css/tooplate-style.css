@@ -456,6 +456,15 @@ b, strong {
 .social-links .uil:hover {
   color: #ffc200;
 }
+.social-links .bi {
+  color: #f7f3f3;
+  font-size: 20px;
+  display: block;
+  margin: 5px 0;
+}
+.social-links .bi:hover {
+  color: #ffc200;
+}
 
 @media (min-width: 1270px) {
   .owl-theme .owl-dots {
