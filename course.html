@@ -238,7 +238,13 @@
    <form class="form-horizontal"
                 method="post" action="https://formsubmit.co/thanzhtet@gmail.com">
             <div class="form-group">
+              
               <input type="hidden" name="_next" value="https://thanzhtet.netlify.app/thanks.html">
+              <!--enable honeypot-->
+              <input type="text" name="_honey" style="display:none">
+               <!--disable captcha-->
+          <input type="hidden" name="_captcha" value="false">
+              
               <div class="col-sm-12">
                 <!-- name  -->
                 <input
@@ -282,9 +288,7 @@
               <i class="fa fa-paper-plane"></i>
               <span class="send-text">SEND</span>
             </button>     
-          </form>    
-          <!--disable captcha-->
-          <input type="hidden" name="_captcha" value="false">
+          </form>           
           <!-- end of form -->
 </section>
         
