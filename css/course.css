@@ -1,3 +1,28 @@
+.container text-center{
+  position: relative;
+}
+
+.title {
+  font-size: 36px;
+  text-align: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  /* Adding animation */
+  animation: floating 2s ease-in-out infinite;
+}
+
+/* Keyframes for the floating animation */
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 ul{
 	list-style: none;
 	display: flex;
