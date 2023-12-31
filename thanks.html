@@ -19,10 +19,6 @@
 		p, .link	{
 			text-align: center;
 		}
-		.default_reply	{
-			border-style: solid;
-			border-width: 5px;		
-		}
 		a {
 			color: darkkhaki;
 			text-decoration: none;
@@ -33,6 +29,91 @@
 		img {
 			max-width: 100%;
 		}
+/*Firework corner effect*/
+		.firework {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: explode 1s infinite;
+}
+
+.red_circle {
+  background: #FF4136;
+}
+
+.blue_circle {
+  background: #0074D9;
+}
+
+.green_circle {
+  background: #2ECC40;
+}
+
+.yellow_circle {
+  background: #FFDC00;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(10);
+    opacity: 0;
+  }
+}
+/*Button Syle*/
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
+}
+
+.button2:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
 	</style>
 
 </head>
@@ -43,7 +124,11 @@
 	<p class="red">Thank you.</p>
 	<p class="green">We received your message.</p>
 	<p class="blue">We will get back to you as soon as possible.</p>
-	<a href="index.html"> <div class="link"> Click here to reach out the home page. </div> </a>
+	<div class="button-container">
+	<button class="button button2">
+		<a href="index.html"> <div class="link"> Click here to reach out the home page. </div> </a>
+	</button>
+	</div>
 </div>
 </div>
 
@@ -55,6 +140,11 @@
 	</div>
 </div>
 
+<!--Corner Animation Effect-->
+<div class="firework top-left red_circle"></div>
+<div class="firework top-right blue_circle"></div>
+<div class="firework bottom-left green_circle"></div>
+<div class="firework bottom-right yellow_circle"></div>
 
 	<div class="cotainer">
 		            <div class="col-lg-12 col-12">                                
