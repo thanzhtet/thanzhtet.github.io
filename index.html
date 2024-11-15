@@ -61,7 +61,7 @@
     </nav>
 
     <!-- ABOUT -->
-    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
         <div class="container">
             <div class="row">
                 
@@ -76,7 +76,7 @@
                                     <span class="animated-item">Course Creator</span>
                                 </div>
                         </h1>
-
+    
                         <p>I have 11 years experience in IT field, plus strong communication skill and higher knowledges in IT. 
                           I am incredibly passionate about teaching and learning. I like writing poems and watching movies.</p>
                         
@@ -86,16 +86,29 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-5 col-md-12 col-12">
-                    <div class="about-image svg">
-                        <img src="images/me.jpg" class="img-fluid rounded" alt="png image">
-                    </div>
+    
+                <!-- New Section to Display Days Lived -->
+                <div class="col-lg-5 col-md-12 col-12 d-flex align-items-center justify-content-center">
+                    <h1 id="days-lived" class="days-lived-text"></h1>
                 </div>
-
+    
             </div>
         </div>
     </section>
+    
+    <script>
+        function calculateDaysLived() {
+            const birthDate = new Date(1990, 7, 24); // Year, Month (0-indexed), Day
+            const today = new Date();
+            const differenceInTime = today - birthDate;
+            const daysLived = Math.floor(differenceInTime / (1000 * 60 * 60 * 24));
+    
+            document.getElementById("days-lived").textContent = `I already lived ${daysLived} days in this life.`;
+        }
+    
+        // Call the function on page load
+        calculateDaysLived();
+    </script>
 
     <!-- PROJECTS -->
     <section class="project py-5" id="project">
