@@ -270,72 +270,8 @@ Certificate: No
    
   </div>
 </div>
-  
-<section id="last">
-      <!-- heading -->
-      <div class="full">
-        <h3>Drop a Message</h3>
-        <h3>We want to hear from you</h3>
- 
-        <div class="lt">
-<!--Contact Form-->
-   <form class="form-horizontal"
-                method="post" action="https://formsubmit.co/thanzhtet@gmail.com">
-            <div class="form-group">
-              
-              <input type="hidden" name="_next" value="https://thanzawhtet.com/thanks.html">
-              <!--enable honeypot-->
-              <input type="text" name="_honey" style="display:none">
-               <!--disable captcha-->
-          <input type="hidden" name="_captcha" value="false">
-              
-              <div class="col-sm-12">
-                <!-- name  -->
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="NAME"
-                  name="name"
-                  value=""
-                />
-              </div>
-            </div>
-     
-            <div class="form-group">
-              <div class="col-sm-12">
-                <!-- email  -->
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="EMAIL"
-                  name="email"
-                  value=""
-                />
-              </div>
-            </div>
-     
-            <!-- message  -->
-            <textarea
-              class="form-control"
-              rows="10"
-              placeholder="MESSAGE"
-              name="message">
-            </textarea>
- 
-            <button
-              class="btn btn-primary send-button"
-              id="submit"
-              type="submit"
-              value="SEND">
-              <i class="fa fa-paper-plane"></i>
-              <span class="send-text">SEND</span>
-            </button>     
-          </form>           
-          <!-- end of form -->
-</section>
- <!--Start of Tawk.to Script-->
+
+<!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -348,7 +284,44 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
-          
+  
+<section id="last">
+    <!-- Row for the layout -->
+    <div class="row">
+  <!-- Left Column: Contact Form -->
+  <div class="col-12 col-md-6 contact-form">
+    <form class="form-horizontal" method="post" action="https://formsubmit.co/thanzhtet@gmail.com">
+      <h3 style="text-align: center;">Drop a Message</h3>
+      <h3 style="text-align: center;">I want to hear from you</h3>
+      <input type="hidden" name="_next" value="https://thanzawhtet.com/thanks.html">
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_captcha" value="false">
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" />
+      </div>
+
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" />
+      </div>
+
+      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+
+      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+        <i class="fa fa-paper-plane"></i>
+        <span class="send-text">SEND</span>
+      </button>
+    </form>
+  </div>
+
+  <!-- Right Column: Appointment Booking -->
+  <div class="col-12 col-md-6 appointment-booking">
+    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3V9VELkLtsXJIGGZmy2CoVVRMQkznx3jvev9nCbO8XI9y3IIEWARZSkWI3uciVIlHdN-ero_OD?gv=true" style="border: 0; width: 100%; height: 520px; frameborder: 0;"></iframe>
+  </div>
+</div>
+  </div>
+</section>
+
     <!-- FOOTER -->
      <footer class="footer py-5">
           <div class="container">
